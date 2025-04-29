@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My Web Page</h1>
+        </header>
+
+        <!-- Ordered List with Roman Numerals -->
+        <section class="list-section">
+            <h2>My Favorite Items</h2>
+            <ol type="I">
+                <li>Technology</li>
+                <li>Music</li>
+                <li>Travel</li>
+                <li>Books</li>
+                <li>Sports</li>
+            </ol>
+        </section>
+
+        <!-- External Image -->
+        <section class="image-section">
+            <h2>Stunning View</h2>
+            <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+                alt="Beautiful Landscape from Pexels" />
+        </section>
+
+        <!-- Contact Table -->
+        <section class="table-section">
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Smith</td>
+                        <td>Nairobi, Kenya</td>
+                        <td>+254 712 345 678</td>
+                        <td>alice.smith@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Jones</td>
+                        <td>Kampala, Uganda</td>
+                        <td>+256 789 101 112</td>
+                        <td>bob.jones@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carol White</td>
+                        <td>Accra, Ghana</td>
+                        <td>+233 541 234 567</td>
+                        <td>carol.white@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>David Kim</td>
+                        <td>Seoul, South Korea</td>
+                        <td>+82 10-1234-5678</td>
+                        <td>david.kim@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Eva Green</td>
+                        <td>Lagos, Nigeria</td>
+                        <td>+234 803 456 7890</td>
+                        <td>eva.green@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="form-section">
+            <h2>Register Now</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required
+                    minlength="6" />
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required />
+                <label for="female">Female</label>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ug">Uganda</option>
+                    <option value="gh">Ghana</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="za">South Africa</option>
+                </select>
+
+                <label>Interests:</label>
+                <input type="checkbox" id="tech" name="interests" value="Technology" />
+                <label for="tech">Technology</label>
+                <input type="checkbox" id="music" name="interests" value="Music" />
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="interests" value="Sports" />
+                <label for="sports">Sports</label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+    </body>
+
+</html>
