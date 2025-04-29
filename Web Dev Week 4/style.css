@@ -1,0 +1,142 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center center/cover;
+    height: 60vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    flex: 1 1 30%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Queries */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .content-box {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+}
