@@ -1,0 +1,56 @@
+/* Apply general body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the header using class selector */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the 'about' section using ID selector */
+#about {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Change font for h2 inside the about section */
+#about h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style image section */
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the image using a class selector */
+.styled-image {
+    width: 80%;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Style the footer using class selector */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
